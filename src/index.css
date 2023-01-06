@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background: hsl(216, 12%, 8%);
+}
+
+.footClass {
+  background-image: url("https://avatars.githubusercontent.com/u/104096298?v=4");
+}
+
+.star {
+  @apply w-full flex gap-1;
+}
+
+.card {
+  @apply container rounded-3xl mx-auto max-w-sm px-5 py-8 md:p-8;
+  background: linear-gradient(198deg, hsl(213, 19%, 18%), hsl(213, 14%, 12%));
+}
+.btn {
+  @apply text-gray-light bg-darkblue rounded-full hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-orangeS hover:text-white focus:bg-gray-medium focus:text-white h-[46px] w-[46px] text-[16px];
+}
+.submit {
+  @apply w-full bg-orangeS text-center text-white uppercase rounded-full hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-white hover:text-orangeS h-10 pt-0.5 tracking-[2px];
+}
